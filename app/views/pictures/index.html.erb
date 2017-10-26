@@ -1,0 +1,35 @@
+<h1>The Hacking Pinterest</h1>
+
+<div class="center jumbotron">
+	<h2>Ajouter ma photo</h2>
+  	<p> Si tu veux que toute la communauté se foute de ta gueule, fais pas le timide et ajoute une photo ! </p>
+	
+	<%= form_tag '/upload', multipart: true do %>
+  	<label for="Image">Insérer votre image</label> 
+  	<%= file_field_tag "Image" %>
+  	<%= submit_tag %>
+	<% end %>
+
+</div>
+
+<h1>Commenter les dernières photos</h1>
+
+<div class="center jumbotron">
+	<h2><%= link_to image_tag("15645.jpeg") %></h2>
+	<%= link_to "laisser un commentaire", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+	<h2><%= link_to image_tag("654654.jpeg") %></h2>
+	<%= link_to"laisser un commentaire", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+	<h2><%= link_to image_tag("images.jpeg") %></h2>
+	<%= link_to "laisser un commentaire", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="center jumbotron">
+	<h2><%= link_to image_tag("4545.jpg") %></h2>
+	<%= link_to "laisser un commentaire", "#", class: "btn btn-lg btn-primary" %>
+</div>
